@@ -1,0 +1,19 @@
+/Users/muneebali/Library/Android/sdk/cmake/3.22.1/bin/cmake \
+  -H/Users/muneebali/Desktop/Codes/Flutter/SDK/flutter/packages/flutter_tools/gradle/src/main/scripts \
+  -DCMAKE_SYSTEM_NAME=Android \
+  -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+  -DCMAKE_SYSTEM_VERSION=24 \
+  -DANDROID_PLATFORM=android-24 \
+  -DANDROID_ABI=armeabi-v7a \
+  -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a \
+  -DANDROID_NDK=/Users/muneebali/Library/Android/sdk/ndk/28.2.13676358 \
+  -DCMAKE_ANDROID_NDK=/Users/muneebali/Library/Android/sdk/ndk/28.2.13676358 \
+  -DCMAKE_TOOLCHAIN_FILE=/Users/muneebali/Library/Android/sdk/ndk/28.2.13676358/build/cmake/android.toolchain.cmake \
+  -DCMAKE_MAKE_PROGRAM=/Users/muneebali/Library/Android/sdk/cmake/3.22.1/bin/ninja \
+  -DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/muneebali/Desktop/Codes/Flutter/Projects/Learning_Flutter/build/app/intermediates/cxx/debug/cm13o677/obj/armeabi-v7a \
+  -DCMAKE_RUNTIME_OUTPUT_DIRECTORY=/Users/muneebali/Desktop/Codes/Flutter/Projects/Learning_Flutter/build/app/intermediates/cxx/debug/cm13o677/obj/armeabi-v7a \
+  -B/Users/muneebali/Desktop/Codes/Flutter/Projects/Learning_Flutter/build/.cxx/debug/cm13o677/armeabi-v7a \
+  -GNinja \
+  -Wno-dev \
+  --no-warn-unused-cli \
+  -DCMAKE_BUILD_TYPE=debug

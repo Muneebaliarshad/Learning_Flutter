@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/Users/muneebali/Desktop/Codes/Flutter/SDK/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/muneebali/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/muneebali/Desktop/Codes/Flutter/Projects/Learning_Flutter/build/.cxx/debug/cm13o677/armeabi-v7a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/muneebali/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/muneebali/Desktop/Codes/Flutter/Projects/Learning_Flutter/build/.cxx/debug/cm13o677/armeabi-v7a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}
