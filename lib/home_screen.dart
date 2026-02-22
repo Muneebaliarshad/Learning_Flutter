@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'login_page.dart';
 import 'buttons_page.dart';
 import 'text_fields_page.dart';
+import 'gestures_demo_page.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -10,7 +11,8 @@ class HomeScreen extends StatelessWidget {
   final List<String> _menuItems = const [
     'Login View',
     'Buttons',
-    'Text Fields'
+    'Text Fields',
+    'Gesture'
   ];
 
   @override
@@ -59,6 +61,12 @@ class HomeScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const TextFieldsPage()),
+                  );
+                } else if (index == 3) {
+                  // Navigate to Gestures Demo Page
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const GesturesDemoPage()),
                   );
                 } else {
                   ScaffoldMessenger.of(context).showSnackBar(
