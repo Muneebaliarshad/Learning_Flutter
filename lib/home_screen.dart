@@ -4,6 +4,7 @@ import 'login_page.dart';
 import 'buttons_page.dart';
 import 'text_fields_page.dart';
 import 'gestures_demo_page.dart';
+import 'images_demo_page.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -12,7 +13,8 @@ class HomeScreen extends StatelessWidget {
     'Login View',
     'Buttons',
     'Text Fields',
-    'Gesture'
+    'Gesture',
+    'Images'
   ];
 
   @override
@@ -67,6 +69,12 @@ class HomeScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const GesturesDemoPage()),
+                  );
+                } else if (index == 4) {
+                  // Navigate to Images Demo Page
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const ImagesDemoPage()),
                   );
                 } else {
                   ScaffoldMessenger.of(context).showSnackBar(
