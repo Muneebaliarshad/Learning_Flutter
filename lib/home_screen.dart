@@ -5,6 +5,7 @@ import 'buttons_page.dart';
 import 'text_fields_page.dart';
 import 'gestures_demo_page.dart';
 import 'images_demo_page.dart';
+import 'local_json_page.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -14,7 +15,8 @@ class HomeScreen extends StatelessWidget {
     'Buttons',
     'Text Fields',
     'Gesture',
-    'Images'
+    'Images',
+    'Local JSON'
   ];
 
   @override
@@ -75,6 +77,12 @@ class HomeScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const ImagesDemoPage()),
+                  );
+                } else if (index == 5) {
+                  // Navigate to Local JSON Page
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const LocalJsonPage()),
                   );
                 } else {
                   ScaffoldMessenger.of(context).showSnackBar(
